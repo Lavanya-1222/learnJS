@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus maiores quisquam, asperiores id minus harum? Vitae, ut! Repellat architecto quo deserunt aperiam voluptate qui accusantium a? Ab, corporis accusamus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus maiores quisquam, asperiores id minus harum? Vitae, ut! Repellat architecto quo deserunt aperiam voluptate qui accusantium a? Ab, corporis accusamus?</p>
+    <script>
+    var ele1=document.createElement("h1");
+    var ele2=document.createElement("h2");
+    var text=document.createTextNode("Welcome");
+    ele1.appendChild(text)
+
+    var text=document.createTextNode("Welcome to lava");
+    ele2.appendChild(text)
+console.log(ele1);
+
+document.body.appendChild(ele1)
+
+document.body.insertBefore(ele2,document.body.childNodes[2])
+
+    </script>
+</body>
+</html>

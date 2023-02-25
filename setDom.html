@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para" class="abc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum rerum expedita. Quia, nihil! Facilis quibusdam, eos adipisci, possimus<span>NSE</span> corrupti provident, commodi tempora tempore similique facere fuga voluptate. Culpa, excepturi?</p>
+    <script>
+console.log
+("---------innerText-----------") ;  
+document.getElementById("para").innerText="Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. ";
+
+console.log(document.getElementById("para").innerText) 
+console.log
+("---------innerHTML-----------") ; 
+document.getElementById("para").innerHTML="<p id='para' class='abc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum rerum expedita. Quia, nihil! Facilis quibusdam, eos adipisci, possimus<strong>NSE</strong> corrupti provident, commodi tempora tempore similique facere fuga voluptate. Culpa, excepturi?</p>";
+console.log(document.getElementById("para").innerHTML)
+
+console.log
+("---------setAttribute-----------") ;
+document.getElementById("para").setAttribute('id','paragraph');
+
+console.log(document.getElementById('paragraph').getAttribute('id'))
+
+console.log
+("---------attributes-----------") ;
+document.getElementById("paragraph").attributes[1].value='XYZ';
+
+console.log(document.getElementById('paragraph').getAttribute('class'))
+console.log
+("---------removeAttribute-----------") ;
+document.getElementById("paragraph").removeAttribute('class');
+
+console.log(document.getElementById('paragraph').getAttribute('class'))
+
+    </script>
+</body>
+</html>

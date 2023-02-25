@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling Dom Methods</title>
+</head>
+<body>
+    <p id="lava" class="para" style="background-color: red;">hello lava</p>
+    <p class="para" style="background-color: blue;">hello lava</p> 
+    <script>
+        
+        console.log("---------Style----------")
+                document.querySelector('#lava').style.backgroundColor="pink";
+
+
+                console.log("---------className-----------")
+
+                document.querySelector('#lava').className="ava";
+        console.log(document.getElementById('lava').getAttribute('class'));
+
+
+
+        
+        console.log("---------classList--add()---------")
+
+        document.querySelector('#lava').classList.add("abc","xyz");
+        console.log(document.getElementById('lava').getAttribute('class'));
+       console.log(document.querySelector('#lava').classList[0]);
+       
+       
+       
+       console.log("---------classList-----------")
+        document.querySelector('#lava').classList="abc xyz bcd";
+        console.log(document.getElementById('lava').getAttribute('class'));
+        console.log(document.querySelector('#lava').classList[0]);
+
+
+
+
+        console.log("---------classList--remove()---------")
+        document.querySelector('#lava').classList.remove("abc");
+
+        console.log(document.getElementById('lava').getAttribute('class'));
+     
+        console.log(document.querySelector('#lava').classList[0]);
+        console.log("---------classList--length---------")
+        console.log(document.querySelector('#lava').classList.length);
+
+        console.log("---------classList--toggle()---------")
+        document.querySelector('#lava').onclick=function(){
+        document.querySelector('#lava').classList.toggle("toggled");
+        console.log(document.querySelector('#lava').classList);
+   
+    
+    }
+
+        console.log(document.querySelector('#lava').classList);
+
+        console.log("------classList--item(index)------")
+        console.log(document.querySelector('#lava').classList.item(1)); 
+
+        console.log("------classList--contains(class)------")
+        console.log(document.querySelector('#lava').classList.contains('toggled')); 
+ 
+
+    </script>
+</body>
+</html>

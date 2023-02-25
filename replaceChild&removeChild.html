@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li>sunlower</li>
+    <li>rose</li>
+    <li>chafha</li>
+    <li>lilly</li>
+    </ul>
+    <script>
+        var html="<li>jasmine</li>";
+var newElement=document.createElement('li');
+newElement.append(document.createTextNode("jasmine"))
+
+        var old=document.getElementById('ul').firstElementChild;
+        document.getElementById('ul').replaceChild(newElement,old)
+        var element=document.getElementById('ul').lastElementChild;
+document.write("removed child")
+        document.getElementById('ul').removeChild(element)
+
+
+    </script>
+</body>
+</html>

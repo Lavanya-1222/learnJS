@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, assumenda!</p>
+
+    <h1 id="h1" class="heads">hello</h1>
+    <script>
+ console.log("---------innerText-----------")
+console.log(document.getElementById('para').innerText)
+console.log(document.body.innerText)
+
+console.log("---------innerHTML-----------")
+console.log(document.getElementById('para').innerHTML)
+console.log(document.body.innerHTML)
+console.log("---------getAttributeNode-----------")
+// getAttributeNode
+console.log(document.getElementById('h1').getAttributeNode('id'))
+console.log(document.getElementById('h1').getAttributeNode('id').value)
+console.log(document.getElementById('h1').getAttributeNode('id').name)
+
+console.log("---------getAttribute-----------")
+
+console.log(document.getElementById('h1').getAttribute('id'))
+
+console.log("---------attributes-----------")
+console.log(document.getElementById('h1').attributes)
+console.log(document.getElementById('h1').attributes[1])
+
+console.log(document.getElementById('h1').attributes[1].value)
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head id="head"></head>
+<html id='main' lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, ullam?</p>
+    <ul id="ul"><li id="1">lava</li>
+        <li id="2">vivo</li>
+        <li id="3">kira</li></ul>
+    <script>
+        console.log("--------------parentNode---------------");
+        console.log(document.getElementById('main').parentNode);
+        console.log("----------parentElement---------------");
+        console.log(document.getElementById('main').parentElement);
+
+        console.log("----------children---------------");
+        console.log(document.getElementById('main').children);
+        console.log("----------childNodes---------------");
+        console.log(document.getElementById('para').childNodes);
+
+        console.log("----------firstChild---------------");
+        console.log(document.getElementById('ul').firstChild);
+        console.log("----------firstElementChild---------------");
+        console.log(document.getElementById('ul').firstElementChild);
+
+        console.log("----------lastChild---------------");
+        console.log(document.getElementById('ul').lastChild);
+        console.log("----------lastElementChild---------------");
+        console.log(document.getElementById('ul').lastElementChild);
+
+        console.log("----------lastChild-1--------------");
+        console.log(document.getElementById('2').lastChild);
+        console.log("----------firstChild--1-------------");
+        console.log(document.getElementById('2').firstChild);
+
+        console.log("----------nextElementSibling--------------");
+        console.log(document.getElementById('2').nextElementSibling);
+        console.log("----------nextSibling--------------");
+        console.log(document.getElementById('2').nextSibling);
+        console.log("--------nextSibling---if no siblings---------");
+        console.log(document.getElementById('3').nextSibling);
+        console.log("--------nextElementSibling-if no siblings--------");
+        console.log(document.getElementById('3').nextElementSibling);
+
+
+        console.log("----------previousElementSibling--------------");
+        console.log(document.getElementById('2').previousElementSibling);
+        console.log("----------previousSibling--------------");
+        console.log(document.getElementById('2').previousSibling);
+        console.log("--------previousSibling---if no siblings---------");
+        console.log(document.getElementById('1').previousSibling);
+        console.log("--------previousElementSibling-if no siblings--------");
+        console.log(document.getElementById('1').previousElementSibling);
+       
+    </script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+let arr=['lava',89,9.8]
+document.write(arr,' <h1>2nd method</h1>')
+arr=Array('vava',87,7.8)
+document.write(arr)
+document.write('<h1>property</h1>')
+document.write('length ',arr.length)
+document.write('<h1>Methods</h1>')
+let a1=[12,13,14,2,5,100]
+document.write('sort it sort according to string ',a1.sort())
+
+document.write('<br>sort it sort according to number ',a1.sort(function(a,b) { return (a-b)}))
+document.write('<br>sort it reverse according to string ',a1.reverse())
+
+arr.push('kara')
+document.write('<br>push ',arr)
+arr.pop()
+document.write('<br>pop ',arr)
+
+document.write('<br>is array ',Array.isArray(arr))
+
+a2=arr.toString();
+document.write('<br>toString ',a2,Array.isArray(a2))
+
+a3=arr.join('-');
+document.write('<br>join ',a3,Array.isArray(a3))
+
+arr.shift()
+document.write('<br>shift ',arr)
+
+arr.unshift('lava')
+document.write('<br>unshift ',arr)
+</script>
+</body>
+</html>
