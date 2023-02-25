@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div>
-    <h1 id="h1">welcome</h1>
-    </div>
-</body>
+<body id="body">
+    <p id="para"></p>
 <script>
-    console.log(document.body.contains(document.getElementById('h1')))
-    console.log(document.body.contains(document.getElementById('hl1')))
+    console.log(document.body.hasAttribute('id'))
+    console.log(document.body.hasChildNodes())
+    console.log(document.getElementById('para').hasChildNodes())
 </script>
+</body>
 </html>
