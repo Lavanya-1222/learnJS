@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='div'><p id="para" class="l">lavaM<div>l</div></p> </div>
+    <p id="para">lavaM</p>
+</body>
+<script>
+    ele1=document.getElementById('div').children[0]
+    ele2=document.getElementById('para');
+
+    console.log(ele1.isEqualNode(ele2))
+
+</script>
+</html>
