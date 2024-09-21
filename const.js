@@ -3,8 +3,7 @@
 const a=90;
 // const a=88;syntaxError: Identifier 'a' has already been declared 
 
-// a=89;TypeError: Assignment to constant variable.
-// at const.js:6:2
+// a=89;TypeError: Assignment to constant variable. at const.js:6:2
 
 {
     const x=98

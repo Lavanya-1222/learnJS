@@ -1,3 +1,5 @@
+//  Let Keyword 
+
 // console.log(a)//t ReferenceError: Cannot access 'a' before initialization
 let a=90
 // let a=900 Uncaught SyntaxError: Identifier 'a' has already been declared (at let.js:3:5)
