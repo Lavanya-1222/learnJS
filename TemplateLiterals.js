@@ -4,6 +4,6 @@ y="mira"
 function a(){
     return "Google";
 }
-k=`Welcome ${x} and ${y} this our site ${a()}`
+k=`Welcome ${x} and ${y} this is our site ${a()}`
 console.log(k);
 
