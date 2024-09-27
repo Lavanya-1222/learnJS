@@ -37,7 +37,7 @@ let day=1
 switch(day)
 
 {
-    case 0: case 1:
+    case 0: case 1:// 
     console.log("Monday");
 break;
     case 2:
@@ -47,3 +47,6 @@ break;
     default:
         console.log("no number entered")
 }
+
+
+
