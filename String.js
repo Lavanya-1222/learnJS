@@ -40,8 +40,9 @@ console.log("---------------------------toLowerandUPPer-------------------------
 console.log(string1.toLowerCase(),string1.toUpperCase())
 
 console.log("-----------------------includes-------------------------------------")
-console.log(string1.includes("Lavanya"))//it finds the string is present or not
+console.log(string1.includes("Lavanya"))//it finds the string is present or not return true and false value
                                         //never take regular expresion /fhg/
+console.log(string1.includes("Sam"))
 
 console.log("-------------------startsWith---------endsWith--------------------------------")
 console.log(string1.startsWith("Lava1")) 

@@ -21,8 +21,8 @@ let obj6={
         gender:"female",
            }
 }
-let {name7,inobj:{gender}}=obj6;
-console.log(gender)
+let {name7,inobj:{gender:g}}=obj6;
+console.log(g)
 console.log("----------method 2-1-nested-object--------")
 let obj7={
     name8:"lava",
